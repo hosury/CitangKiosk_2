@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{45201BC4-78EA-4FAB-86B0-2C00098357F9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CtangKiosk</RootNamespace>
+    <AssemblyName>CtangKiosk</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Categories\Kakanin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Categories\Kakanin.Designer.cs">
+      <DependentUpon>Kakanin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Categories\Merienda.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Categories\Merienda.Designer.cs">
+      <DependentUpon>Merienda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Categories\productPanel.cs" />
+    <Compile Include="Categories\Sizzling.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Categories\Sizzling.Designer.cs">
+      <DependentUpon>Sizzling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Categories\Special.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Categories\Special.Designer.cs">
+      <DependentUpon>Special.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Choices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Choices.Designer.cs">
+      <DependentUpon>Choices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Customization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Customization.Designer.cs">
+      <DependentUpon>Customization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="label.cs" />
+    <Compile Include="OrderingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OrderingForm.Designer.cs">
+      <DependentUpon>OrderingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThankYou.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ThankYou.Designer.cs">
+      <DependentUpon>ThankYou.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViewOrders.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViewOrders.Designer.cs">
+      <DependentUpon>ViewOrders.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YouThank.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YouThank.Designer.cs">
+      <DependentUpon>YouThank.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Categories\Kakanin.resx">
+      <DependentUpon>Kakanin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Categories\Merienda.resx">
+      <DependentUpon>Merienda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Categories\Sizzling.resx">
+      <DependentUpon>Sizzling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Categories\Special.resx">
+      <DependentUpon>Special.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Choices.resx">
+      <DependentUpon>Choices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customization.resx">
+      <DependentUpon>Customization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderingForm.resx">
+      <DependentUpon>OrderingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ThankYou.resx">
+      <DependentUpon>ThankYou.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewOrders.resx">
+      <DependentUpon>ViewOrders.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YouThank.resx">
+      <DependentUpon>YouThank.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image-removebg-preview %282%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
